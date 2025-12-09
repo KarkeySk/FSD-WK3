@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection Manager</title>
+</head>
+<body>
+
+    <h1>Movie Collection Manager</h1>
+    <p>Manage your movies using JSON Server</p>
+
+    <h2>Add New Movie</h2>
+    <form id="add-movie-form">
+        <label>Title</label><br>
+        <input type="text" id="title" required><br><br>
+
+        <label>Genre</label><br>
+        <input type="text" id="genre"><br><br>
+
+        <label>Year</label><br>
+        <input type="number" id="year" required><br><br>
+
+        <button type="submit">Add Movie</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <br>
+
+    <label>Search</label>
+    <input type="text" id="search-input" placeholder="Search by title or genre">
+    <button id="search-btn">Search</button>
+    <button id="clear-btn">Clear</button>
+
+    <h2>Movie List</h2>
+    <div id="movie-list"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
